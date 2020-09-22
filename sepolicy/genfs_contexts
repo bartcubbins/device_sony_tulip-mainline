@@ -1,0 +1,1 @@
+genfscon sysfs	/devices/platform/soc/1a00000.mdss	u:object_r:sysfs_gpu:s0
