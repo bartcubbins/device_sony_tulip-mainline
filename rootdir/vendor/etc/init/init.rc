@@ -15,8 +15,8 @@
 #
 
 on fs
-    mount_all /vendor/etc/fstab
-    swapon_all /vendor/etc/fstab
+    mount_all /vendor/etc/fstab.tulip
+    swapon_all /vendor/etc/fstab.tulip
 
 on init
     # For legacy support

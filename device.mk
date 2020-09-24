@@ -152,7 +152,8 @@ PRODUCT_COPY_FILES +=  \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/vendor/etc/fstab:$(TARGET_COPY_OUT_VENDOR)/etc/fstab \
+    $(LOCAL_PATH)/rootdir/fstab.ramdisk.tulip:$(TARGET_COPY_OUT_RAMDISK)/fstab.tulip \
+    $(LOCAL_PATH)/rootdir/vendor/etc/fstab.tulip:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.tulip \
     $(LOCAL_PATH)/rootdir/vendor/etc/init/init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.rc \
     $(LOCAL_PATH)/rootdir/vendor/etc/init/init.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.usb.rc \
     $(LOCAL_PATH)/rootdir/vendor/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
