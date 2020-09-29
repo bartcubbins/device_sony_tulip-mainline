@@ -487,6 +487,23 @@ static int adev_open_output_stream(struct audio_hw_device *dev,
 
     *stream_out = &out->stream;
 
+    /* TEST: Enable main speaker */
+    struct mixer *mixer;
+    struct mixer_ctl *ctl;
+
+    mixer = mixer_open(CARD_OUT);
+
+    ctl = mixer_get_ctl_by_name(mixer, "RX3 MIX1 INP1");
+    mixer_ctl_set_value(ctl, 0, 3);
+
+    ctl = mixer_get_ctl_by_name(mixer, "SPK DAC Switch");
+    mixer_ctl_set_value(ctl, 0, 1);
+
+    ctl = mixer_get_ctl_by_name(mixer, "RX3 Digital Volume");
+    mixer_ctl_set_value(ctl, 0, 128);
+
+    mixer_close(mixer);
+
     /* TODO The retry mechanism isn't implemented in AudioPolicyManager/AudioFlinger. */
     ret = 0;
 
