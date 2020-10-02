@@ -163,7 +163,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.gralloc=gbm \
     ro.hardware.hwcomposer=drm \
     ro.sf.lcd_density=320 \
-    ro.opengles.version=196609 \
+    ro.opengles.version=196609 
 
 # Wi-Fi interface name
 PRODUCT_PROPERTY_OVERRIDES += \
