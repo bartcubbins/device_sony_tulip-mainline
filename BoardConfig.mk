@@ -93,6 +93,5 @@ DEVICE_MATRIX_FILE := device/sony/tulip-mainline/vintf/compatibility_matrix.xml
 ifeq ($(HOST_OS),linux)
   ifeq ($(WITH_DEXPREOPT),)
     WITH_DEXPREOPT := true
-    WITH_DEXPREOPT_PIC := true
   endif
 endif
