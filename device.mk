@@ -15,7 +15,7 @@
 #
 
 # Device overlay
-DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_SOONG_NAMESPACES += external/mesa3d
 
@@ -25,8 +25,7 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 # VNDK
 PRODUCT_USE_VNDK_OVERRIDE := true
 
-# aapt configuration
-
+# AAPT configuration
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
