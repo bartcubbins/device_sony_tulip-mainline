@@ -15,3 +15,6 @@
 #
 
 include $(call all-subdir-makefiles)
+
+# Create /vendor/firmware folder
+$(shell mkdir -p $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/firmware_mnt)
