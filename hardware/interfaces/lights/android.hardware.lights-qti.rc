@@ -1,5 +1,6 @@
 service vendor.light-qti /vendor/bin/hw/android.hardware.lights-service.qti
     class hal
-    user system
-    group system
+    # TODO should be system
+    user root
+    group root
     shutdown critical

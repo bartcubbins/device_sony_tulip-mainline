@@ -95,6 +95,11 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
 
+# Lights AIDL HALs
+PRODUCT_PACKAGES += \
+    lights.msm8939 \
+    android.hardware.lights-service.qti
+    
 # Memtrack
 PRODUCT_PACKAGES += \
     memtrack.msm8939 \
