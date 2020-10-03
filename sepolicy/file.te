@@ -1,2 +1,3 @@
+type vendor_firmware_file, vendor_file_type, file_type;
 type sysfs_gpu, fs_type, sysfs_type;
 type dri_device, dev_type;
